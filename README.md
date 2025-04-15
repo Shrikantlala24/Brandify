@@ -7,7 +7,8 @@ Welcome to **Brandify**, your intelligent brand identity assistant that helps st
 ## 🔗 Project URL
 
 Access the live project here:  
-👉 [Brandify.vercel.site](https://lovable.dev/projects/3c969e9d-026f-4d46-b114-f0513b3fd6ed)
+👉 [Project development Site](https://lovable.dev/projects/3c969e9d-026f-4d46-b114-f0513b3fd6ed)
+👉 [Preview](https://preview--color-voice.lovable.app/)
 
 ---
 
