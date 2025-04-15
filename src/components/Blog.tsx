@@ -28,29 +28,29 @@ const blogPosts = [
 
 const Blog = () => {
   return (
-    <section id="blog" className="w-full py-16 md:py-24 bg-brandify-light">
+    <section id="blog" className="w-full py-16 md:py-24 bg-background">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-brandify-dark">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
             Resources & Articles
           </h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
             Insights and guidance on branding and identity creation
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {blogPosts.map((post, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-md transition-shadow">
-              <div className="aspect-video w-full overflow-hidden bg-gray-100">
+            <Card key={index} className="overflow-hidden hover:shadow-md transition-shadow hover-lift bg-card border border-white/10">
+              <div className="aspect-video w-full overflow-hidden bg-background/50">
                 <img 
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-full object-cover object-center" 
+                  className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500" 
                 />
               </div>
               <CardHeader>
-                <div className="flex justify-between text-sm text-gray-500 mb-2">
+                <div className="flex justify-between text-sm text-muted-foreground mb-2">
                   <span>{post.date}</span>
                   <span>{post.readTime}</span>
                 </div>
@@ -58,8 +58,8 @@ const Blog = () => {
                 <CardDescription>{post.description}</CardDescription>
               </CardHeader>
               <CardFooter>
-                <a href="#" className="text-brandify-primary font-medium flex items-center hover:underline">
-                  Read More <ArrowRight className="ml-2 h-4 w-4" />
+                <a href="#" className="text-primary font-medium flex items-center group">
+                  Read More <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </a>
               </CardFooter>
             </Card>

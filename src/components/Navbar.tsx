@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Brain, Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -40,31 +41,31 @@ const Navbar = () => {
       
       {/* Mobile navigation */}
       {isMenuOpen && (
-        <div className="md:hidden fixed inset-0 bg-white z-40 pt-20">
+        <div className="md:hidden fixed inset-0 bg-card z-40 pt-20">
           <div className="flex flex-col items-center space-y-6 p-6">
             <a 
               href="#how-it-works" 
-              className="text-lg font-medium hover:text-brandify-primary transition-colors"
+              className="text-lg font-medium hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               How It Works
             </a>
             <a 
               href="#features" 
-              className="text-lg font-medium hover:text-brandify-primary transition-colors"
+              className="text-lg font-medium hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Features
             </a>
             <a 
               href="#blog" 
-              className="text-lg font-medium hover:text-brandify-primary transition-colors"
+              className="text-lg font-medium hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Blog
             </a>
             <Button 
-              className="bg-brandify-primary hover:bg-brandify-primary/90 w-full"
+              className="bg-primary hover:bg-primary/90 w-full"
               onClick={() => setIsMenuOpen(false)}
             >
               Get Started

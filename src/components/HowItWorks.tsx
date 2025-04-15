@@ -31,34 +31,34 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="w-full py-16 md:py-24 bg-white">
+    <section id="how-it-works" className="w-full py-16 md:py-24 bg-card">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-brandify-dark">How It Works</h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">How It Works</h2>
+          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
             Our step-by-step process turns your brand vision into a complete identity system in minutes
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
           {steps.map((step, index) => (
-            <div key={index} className="relative flex items-start md:items-center mb-12">
+            <div key={index} className="relative flex items-start md:items-center mb-12 hover-scale group">
               {/* Timeline */}
               {index < steps.length - 1 && (
-                <div className="absolute left-6 top-10 bottom-0 w-0.5 bg-gray-200 hidden md:block"></div>
+                <div className="absolute left-6 top-10 bottom-0 w-0.5 bg-primary/20 hidden md:block group-hover:bg-primary transition-colors duration-300"></div>
               )}
               
               {/* Icon */}
               <div className="relative flex-shrink-0 mr-6">
-                <div className="w-12 h-12 rounded-full bg-brandify-primary/10 flex items-center justify-center">
-                  <step.icon className="h-6 w-6 text-brandify-primary" />
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                  <step.icon className="h-6 w-6 text-primary animate-pulse-slow" />
                 </div>
               </div>
               
               {/* Content */}
-              <div className="flex-grow">
-                <h3 className="text-xl font-display font-medium text-brandify-dark mb-2">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
+              <div className="flex-grow glass-card p-4 rounded-lg">
+                <h3 className="text-xl font-display font-medium text-foreground mb-2">{step.title}</h3>
+                <p className="text-muted-foreground">{step.description}</p>
               </div>
             </div>
           ))}
