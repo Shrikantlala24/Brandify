@@ -64,12 +64,10 @@ const FeedbackLoop = () => {
                 </div>
               </div>
               
-              <div className="pt-4">
-                <Button variant="outline" size="sm" className="w-full bg-gray-700/50 border-gray-600 text-gray-300 hover:bg-gray-700 hover:text-white rounded-xl">
-                  <RefreshCw className="mr-2 h-4 w-4" />
-                  Continue where you left off
-                </Button>
-              </div>
+              <Button variant="outline" size="sm" className="w-full bg-gray-700/50 border-gray-600 text-gray-300 hover:bg-gray-700 hover:text-white rounded-xl">
+                <RefreshCw className="mr-2 h-4 w-4" />
+                Continue where you left off
+              </Button>
             </div>
           </Card>
 
