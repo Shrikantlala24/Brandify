@@ -1,73 +1,62 @@
-# Welcome to your Lovable project
+# 🧠 Brandify – AI-Powered Brand Identity Assistant
 
-## Project info
+Welcome to **Brandify**, your intelligent brand identity assistant that helps startups, businesses, and creators define, design, and distinguish their brand—automatically.
 
-**URL**: https://lovable.dev/projects/3c969e9d-026f-4d46-b114-f0513b3fd6ed
+---
 
-## How can I edit this code?
+## 🔗 Project URL
 
-There are several ways of editing your application.
+Access the live project here:  
+👉 [Brandify.vercel.site](https://lovable.dev/projects/3c969e9d-026f-4d46-b114-f0513b3fd6ed)
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3c969e9d-026f-4d46-b114-f0513b3fd6ed) and start prompting.
+## 🚀 Overview
 
-Changes made via Lovable will be committed automatically to this repo.
+**Brandify** is an AI-powered tool designed to generate brand identities based on a user's brief, story, values, and target audience. It automates color palette selection, typography generation, and visual brand mockups—making brand creation fast, affordable, and inspiring.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## ✨ Key Features
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- 🤖 **AI Chat Assistant** – Gathers brand brief and insights
+- 🎨 **Color Palette Generator** – Based on color theory and psychology
+- ✍️ **Typography Recommender** – Based on brand tone and market relevance
+- 🖼️ **Visual Mockups** – Real-world previews of branding elements
+- 🔁 **Feedback Loop** – Regenerate or refine outputs interactively
+- 📦 **Brand Kit Export** – Includes HEX codes, font files, and usage guidelines
+- 🔗 **Future-ready Integrations** – Figma, Canva, RunwayML (planned)
 
-Follow these steps:
+---
+
+## 🧩 Tech Stack
+
+- ⚡ **Vite** – Fast build tool and development server  
+- 💬 **React** – Component-based UI  
+- 🎨 **Tailwind CSS** – Utility-first styling  
+- 🧱 **shadcn/ui** – Modern, accessible UI components  
+- 🧠 **TypeScript** – Type-safe JavaScript  
+- 🔧 **AI/ML Models** – Color & typography generation using NLP + ML (Python backend)  
+- 🔌 **APIs** – OpenAI, Google Vision, Adobe Color (future)
+
+---
+
+## 🛠️ How to Run Locally
+
+### 📦 Requirements
+- Node.js & npm (recommended via [nvm](https://github.com/nvm-sh/nvm#installing-and-updating))
+
+### 🔄 Setup Instructions
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Step 1: Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Step 2: Navigate into the project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
+# Step 3: Install dependencies
 npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the dev server
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/3c969e9d-026f-4d46-b114-f0513b3fd6ed) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
