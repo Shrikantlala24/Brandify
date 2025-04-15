@@ -1,81 +1,77 @@
 
-import { RefreshCw, ThumbsUp, ThumbsDown, Edit } from "lucide-react";
+import { SmilePlus, Meh, Frown, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Progress } from "@/components/ui/progress";
 
 const FeedbackLoop = () => {
   return (
-    <section className="w-full py-16 md:py-24 bg-gradient-to-r from-purple-50 to-blue-50">
+    <section className="w-full py-16 md:py-24 bg-card">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-brandify-dark">
-            Feedback Loop
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-gradient mb-4">
+            How was your experience?
           </h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-            Refine and reprocess brand elements based on your feedback until they're perfect
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Help us improve by sharing your feedback
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          <div className="bg-white rounded-xl shadow-xl overflow-hidden">
-            <div className="p-6 bg-gray-50 border-b">
-              <h3 className="text-xl font-display font-semibold text-brandify-dark">Generated Color Palette</h3>
-            </div>
-            <div className="p-6">
-              <div className="grid grid-cols-5 gap-3 mb-6">
-                <div className="aspect-square rounded-md bg-blue-600"></div>
-                <div className="aspect-square rounded-md bg-blue-400"></div>
-                <div className="aspect-square rounded-md bg-teal-500"></div>
-                <div className="aspect-square rounded-md bg-orange-400"></div>
-                <div className="aspect-square rounded-md bg-gray-800"></div>
-              </div>
-              <div className="flex justify-center space-x-4 mt-6">
-                <Button variant="outline" className="flex items-center gap-2 border-gray-300">
-                  <ThumbsDown className="h-4 w-4" /> Not Quite
-                </Button>
-                <Button className="bg-brandify-primary flex items-center gap-2">
-                  <ThumbsUp className="h-4 w-4" /> Perfect!
-                </Button>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-xl shadow-xl overflow-hidden">
-            <div className="p-6 bg-gray-50 border-b">
-              <h3 className="text-xl font-display font-semibold text-brandify-dark">Typography Recommendations</h3>
-            </div>
-            <div className="p-6">
-              <div className="space-y-6">
-                <div className="border rounded-lg p-4">
-                  <p className="text-sm text-gray-500 mb-2">Heading Font</p>
-                  <p className="font-display text-2xl font-bold">Montserrat</p>
-                  <div className="flex mt-3">
-                    <div className="text-xs bg-gray-100 rounded px-2 py-1 mr-2">Bold</div>
-                    <div className="text-xs bg-gray-100 rounded px-2 py-1 mr-2">Modern</div>
-                    <div className="text-xs bg-gray-100 rounded px-2 py-1">Professional</div>
-                  </div>
-                </div>
-                
-                <div className="border rounded-lg p-4">
-                  <p className="text-sm text-gray-500 mb-2">Body Font</p>
-                  <p className="font-sans text-lg">Open Sans</p>
-                  <div className="flex mt-3">
-                    <div className="text-xs bg-gray-100 rounded px-2 py-1 mr-2">Readable</div>
-                    <div className="text-xs bg-gray-100 rounded px-2 py-1 mr-2">Clean</div>
-                    <div className="text-xs bg-gray-100 rounded px-2 py-1">Versatile</div>
-                  </div>
-                </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <Card className="p-6 glass-card hover-lift">
+            <div className="flex flex-col space-y-6">
+              <div className="flex justify-between items-center">
+                <h3 className="text-xl font-semibold">Brand Kit Progress</h3>
+                <span className="text-2xl font-bold text-primary">75%</span>
               </div>
               
-              <div className="flex justify-center space-x-4 mt-6">
-                <Button variant="outline" className="flex items-center gap-2 border-gray-300">
-                  <RefreshCw className="h-4 w-4" /> Regenerate
-                </Button>
-                <Button variant="outline" className="flex items-center gap-2 border-gray-300">
-                  <Edit className="h-4 w-4" /> Customize
+              <Progress value={75} className="h-2" />
+              
+              <div className="flex justify-between items-center pt-4">
+                <span className="text-muted-foreground">3 Steps Remaining</span>
+                <Button variant="outline" size="sm" className="hover-glow">
+                  <RefreshCw className="mr-2 h-4 w-4" />
+                  Update Progress
                 </Button>
               </div>
             </div>
-          </div>
+          </Card>
+
+          <Card className="p-6 glass-card hover-lift">
+            <div className="space-y-6">
+              <h3 className="text-xl font-semibold mb-4">Rate Your Experience</h3>
+              
+              <div className="grid grid-cols-3 gap-4">
+                <Button 
+                  variant="outline" 
+                  className="flex flex-col items-center p-6 hover:bg-green-500/10 hover:border-green-500 transition-all"
+                >
+                  <SmilePlus className="h-8 w-8 text-green-500 mb-2" />
+                  <span>Love it!</span>
+                </Button>
+                
+                <Button 
+                  variant="outline" 
+                  className="flex flex-col items-center p-6 hover:bg-yellow-500/10 hover:border-yellow-500 transition-all"
+                >
+                  <Meh className="h-8 w-8 text-yellow-500 mb-2" />
+                  <span>It's Okay</span>
+                </Button>
+                
+                <Button 
+                  variant="outline" 
+                  className="flex flex-col items-center p-6 hover:bg-red-500/10 hover:border-red-500 transition-all"
+                >
+                  <Frown className="h-8 w-8 text-red-500 mb-2" />
+                  <span>Needs Work</span>
+                </Button>
+              </div>
+
+              <div className="mt-6 p-4 bg-muted rounded-lg">
+                <p className="text-sm text-muted-foreground">Your feedback helps us improve the brand generation process for everyone.</p>
+              </div>
+            </div>
+          </Card>
         </div>
       </div>
     </section>

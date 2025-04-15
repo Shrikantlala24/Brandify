@@ -1,4 +1,3 @@
-
 import { MessageSquare, PenTool, Eye, RefreshCw, Download } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -37,13 +36,13 @@ const features = [
 
 const FeatureHighlight = () => {
   return (
-    <section id="features" className="w-full py-16 md:py-24 bg-brandify-light">
+    <section id="features" className="w-full py-16 md:py-24 bg-card">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-brandify-dark">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-gradient">
             Onboarding: Seamlessly Guide Users
           </h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
             Our intuitive interface helps users set up their brand brief through natural conversation
           </p>
         </div>
@@ -78,7 +77,7 @@ const FeatureHighlight = () => {
             </div>
           </div>
           
-          <div className="bg-white rounded-lg shadow-xl overflow-hidden border border-gray-100">
+          <div className="glass-card rounded-xl overflow-hidden border border-border">
             <div className="p-6">
               <div className="flex items-center space-x-2 mb-4">
                 <div className="w-3 h-3 rounded-full bg-red-400"></div>
@@ -127,20 +126,20 @@ const FeatureHighlight = () => {
 
 const FeaturesList = () => {
   return (
-    <section className="w-full py-16 md:py-24 bg-white">
+    <section className="w-full py-16 md:py-24 bg-background">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-brandify-dark">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-gradient">
             Core Features
           </h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
             Everything you need to create a professional brand identity
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {features.map((feature, index) => (
-            <Card key={index} className="border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+            <Card key={index} className="glass-card hover-lift hover-glow transition-all duration-300">
               <CardHeader>
                 <div className={`w-12 h-12 rounded-lg ${feature.color} flex items-center justify-center mb-4`}>
                   <feature.icon className="h-6 w-6" />
